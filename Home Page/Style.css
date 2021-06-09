@@ -4,55 +4,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {    
-    font-family: 'Poppins', sans-serif;
-    background-image: url('Background-image-5.jpg');
-}   
+    font-family: 'Poppins', sans-serif; 
+} 
+
 .navbar{
     background-color: black;
     color: whitesmoke;
-    border: 2px solid black;
-    opacity: 1;
+    border: 2px solid black;  
+    width: 100vw;  
 }
+
 .Menu-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    opacity:1;
+    justify-content: space-between;
+    padding: 6px;
+    border-bottom: 2px solid gray; 
 }
+
+.logo-container{
+    width: 170px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.logo{
+    width: 40px ;
+    height: 40px;
+    border-radius: 50%;  
+}
+
 .Brand-name{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
+
 .menu{
-    list-style: none;
-   
+    list-style: none; 
+    margin: 0 40px; 
 }
-.menu li{
+
+.menu li{  
     display: inline; 
     padding: 30px; 
-    margin: 8px;
     font-weight: 400 ; 
     cursor: pointer;  
 }
+
 .menu li a{
     text-decoration: none;
     color: whitesmoke;  
 }
+
 .orange-button{
     background-color: #ff9900;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 5px;
     color: black;
     font-weight:400 ;
 }
-.active{
+
+.menu li .active, .link:hover{
     border-bottom: 4px solid #ff9900;
 }
-img{
-    width:100vw;
-    height: 10%;
-    
+/*
+.sub-menu{
+   display: none;
+}
+.menu ul li .sub-1:hover .sub-menu{
+    display: block;
+} */
+
+.OverView{
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Background-image-4.jpg');   
+    font-size: 35px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.info{
+    display: flex;
+    width: 100vw;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+   /* background-image: url('Background-omage-hexagon-2.jpeg');*/
+    font-size: 40px;
+    font-weight: 600;
+    color: whitesmoke;
 }
